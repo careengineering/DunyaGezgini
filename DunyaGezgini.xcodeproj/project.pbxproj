@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4401BCC42A5340D100CBA924 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4401BCC32A5340D100CBA924 /* MapView.swift */; };
+		4401BCC82A53431300CBA924 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4401BCC72A53431300CBA924 /* MainTabView.swift */; };
+		4401BCCB2A534D8500CBA924 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4401BCCD2A534D8500CBA924 /* Localizable.strings */; };
+		4401BCD12A53553000CBA924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4401BCD32A53553000CBA924 /* InfoPlist.strings */; };
 		44553BC72A4F23F20015A6CF /* DunyaGezginiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44553BC62A4F23F20015A6CF /* DunyaGezginiApp.swift */; };
-		44553BC92A4F23F20015A6CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44553BC82A4F23F20015A6CF /* ContentView.swift */; };
+		44553BC92A4F23F20015A6CF /* ConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44553BC82A4F23F20015A6CF /* ConversionView.swift */; };
 		44553BCB2A4F23F30015A6CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44553BCA2A4F23F30015A6CF /* Assets.xcassets */; };
 		44553BCE2A4F23F30015A6CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44553BCD2A4F23F30015A6CF /* Preview Assets.xcassets */; };
+		448B1BC32A574095008A4D70 /* ConversionViewWithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448B1BC22A574095008A4D70 /* ConversionViewWithAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4401BCC32A5340D100CBA924 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4401BCC72A53431300CBA924 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		4401BCCC2A534D8500CBA924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4401BCCE2A534DA500CBA924 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4401BCD22A53553000CBA924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4401BCD52A53555800CBA924 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4401BCD62A5355D100CBA924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		44553BC32A4F23F20015A6CF /* DunyaGezgini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DunyaGezgini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44553BC62A4F23F20015A6CF /* DunyaGezginiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DunyaGezginiApp.swift; sourceTree = "<group>"; };
-		44553BC82A4F23F20015A6CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44553BC82A4F23F20015A6CF /* ConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionView.swift; sourceTree = "<group>"; };
 		44553BCA2A4F23F30015A6CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44553BCD2A4F23F30015A6CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		448B1BC22A574095008A4D70 /* ConversionViewWithAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewWithAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +64,14 @@
 		44553BC52A4F23F20015A6CF /* DunyaGezgini */ = {
 			isa = PBXGroup;
 			children = (
+				4401BCD62A5355D100CBA924 /* Info.plist */,
 				44553BC62A4F23F20015A6CF /* DunyaGezginiApp.swift */,
-				44553BC82A4F23F20015A6CF /* ContentView.swift */,
+				44553BC82A4F23F20015A6CF /* ConversionView.swift */,
+				448B1BC22A574095008A4D70 /* ConversionViewWithAnimation.swift */,
+				4401BCC32A5340D100CBA924 /* MapView.swift */,
+				4401BCC72A53431300CBA924 /* MainTabView.swift */,
+				4401BCD32A53553000CBA924 /* InfoPlist.strings */,
+				4401BCCD2A534D8500CBA924 /* Localizable.strings */,
 				44553BCA2A4F23F30015A6CF /* Assets.xcassets */,
 				44553BCC2A4F23F30015A6CF /* Preview Content */,
 			);
@@ -109,6 +128,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 44553BBA2A4F23F20015A6CF;
 			productRefGroup = 44553BC42A4F23F20015A6CF /* Products */;
@@ -126,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				44553BCE2A4F23F30015A6CF /* Preview Assets.xcassets in Resources */,
+				4401BCD12A53553000CBA924 /* InfoPlist.strings in Resources */,
+				4401BCCB2A534D8500CBA924 /* Localizable.strings in Resources */,
 				44553BCB2A4F23F30015A6CF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,18 +159,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44553BC92A4F23F20015A6CF /* ContentView.swift in Sources */,
+				448B1BC32A574095008A4D70 /* ConversionViewWithAnimation.swift in Sources */,
+				44553BC92A4F23F20015A6CF /* ConversionView.swift in Sources */,
+				4401BCC42A5340D100CBA924 /* MapView.swift in Sources */,
+				4401BCC82A53431300CBA924 /* MainTabView.swift in Sources */,
 				44553BC72A4F23F20015A6CF /* DunyaGezginiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		4401BCCD2A534D8500CBA924 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4401BCCC2A534D8500CBA924 /* en */,
+				4401BCCE2A534DA500CBA924 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4401BCD32A53553000CBA924 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4401BCD22A53553000CBA924 /* en */,
+				4401BCD52A53555800CBA924 /* tr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		44553BCF2A4F23F30015A6CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -209,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -269,6 +317,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DunyaGezgini/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DunyaGezgini/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +346,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DunyaGezgini/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DunyaGezgini/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -1,5 +1,5 @@
 //
-//  TabView.swift
+//  MainTabView.swift
 //  DunyaGezgini
 //
 //  Created by Çare C. on 3.07.2023.
@@ -14,29 +14,46 @@ struct MainTabView: View {
     var body: some View {
         TabView (selection: $selectedIndex){
             
-            ContentView()
+            ConversionView()
                 .onAppear {
                     selectedIndex = 0
                 }
                 .tabItem {
-                    Image(systemName: "house")
+                    HStack {
+                        Image(systemName: "thermometer")
+                        Text("TAB_CONVERSION")
+                    }
                 }.tag(0)
-            
-            
-            MapView()
+  
+            ConversionViewWithAnimation()
                 .onAppear {
                     selectedIndex = 1
                 }
                 .tabItem {
-                    Image(systemName: "magnifyingglass")
+                    HStack {
+                        Image(systemName: "thermometer")
+                        Text("TAB_CONVERSION_WITH_ANIMATION")
+                    }
                 }.tag(1)
             
+            MapView()
+                .onAppear {
+                    selectedIndex = 2
+                }
+                .tabItem {
+                    HStack {
+                        Image(systemName: "map")
+                        Text("TAB_MAP")
+                    }
+                    
+                }.tag(2)
+            
         }
-        .accentColor(.black)
+        .accentColor(.purple)
     }
 }
 
-struct TabView_Previews: PreviewProvider {
+struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView()
     }

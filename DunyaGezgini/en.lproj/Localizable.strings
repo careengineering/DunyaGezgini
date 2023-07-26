@@ -1,4 +1,5 @@
-/* 
+
+/*
   Localizable.strings
   DunyaGezgini
 
@@ -6,6 +7,12 @@
   
 */
 
-
-"value"
-"fahrenheit"
+"CONVERSION_TEXT_FIELD_PLACEHOLDER" = "value";
+"CONVERSION_FAHRENHEIT" = "fahrenheit";
+"CONVERSION_IS_ACTUALLY" = "is actually";
+"CONVERSION_DEGREES_CELCIUS" = "celcius";
+"MAP_CITY_ISTANBUL" = "Istanbul";
+"MAP_CITY_LONDON" = "London";
+"TAB_CONVERSION" = "Conversion";
+"TAB_CONVERSION_WITH_ANIMATION" = "Conversion+";
+"TAB_MAP" = "Map";

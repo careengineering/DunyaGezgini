@@ -5,3 +5,13 @@
   Created by Çare C. on 3.07.2023.
   
 */
+
+"CONVERSION_TEXT_FIELD_PLACEHOLDER" = "değer";
+"CONVERSION_FAHRENHEIT" = "fahrenheit";
+"CONVERSION_IS_ACTUALLY" = "aslında";
+"CONVERSION_DEGREES_CELCIUS" = "derece";
+"MAP_CITY_ISTANBUL" = "İstanbul";
+"MAP_CITY_LONDON" = "Londra";
+"TAB_CONVERSION" = "Çevirici";
+"TAB_CONVERSION_WITH_ANIMATION" = "Çevirici+";
+"TAB_MAP" = "Harita";

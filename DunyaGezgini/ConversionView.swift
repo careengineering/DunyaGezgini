@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ConversionView.swift
 //  DunyaGezgini
 //
 //  Created by Çare C. on 30.06.2023.
@@ -35,20 +35,20 @@ struct ConversionView: View {
     
     var body: some View {
         VStack {
-            TextField("value", text: $fahreneitValue)
+            TextField("CONVERSION_TEXT_FIELD_PLACEHOLDER", text: $fahreneitValue)
                 .keyboardType(.decimalPad)
                 .font(Font.system(size: 64.0))
                 .multilineTextAlignment(.center)
             
-            Text("fahrenheit")
+            Text("CONVERSION_FAHRENHEIT")
             
-            Text("is actually")
+            Text("CONVERSION_IS_ACTUALLY")
                 .foregroundColor(.gray)
             
             Text(convertToCelcius())
                 .font(Font.system(size: 64.0))
             
-            Text("degrees Celcius")
+            Text("CONVERSION_DEGREES_CELCIUS")
             
             Spacer()
         }
@@ -58,7 +58,7 @@ struct ConversionView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ConversionView_Previews: PreviewProvider {
     static var previews: some View {
         ConversionView()
     }

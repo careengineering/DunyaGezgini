@@ -6,10 +6,42 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct MapView: View {
+    
+    static var region: [MKCoordinateRegion] = [
+        MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 41.015137, longitude: 28.979530),
+            span: MKCoordinateSpan(latitudeDelta: 4, longitudeDelta: 4)),
+        
+        MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 51.509865, longitude: -0.118092),
+            span: MKCoordinateSpan(latitudeDelta: 4, longitudeDelta: 4))
+    ]
+    
+    @State private var selectedIndex = 0
+    
+    @State var region: MKCoordinateRegion = region[0]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Map(coordinateRegion: $region)
+            .edgesIgnoringSafeArea(.top)
+            .overlay(
+                VStack {
+                    Picker("Picker", selection: $selectedIndex, content: {
+                        Text("MAP_CITY_ISTANBUL").tag(0)
+                        Text("MAP_CITY_LONDON").tag(1)
+                    })
+                    .pickerStyle(SegmentedPickerStyle())
+                    .padding()
+                    .onChange(of: selectedIndex) { Value in
+                        self.region = MapView.region[selectedIndex]
+                    }
+                    Spacer()
+                }
+                
+            )
     }
 }
 
